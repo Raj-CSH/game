@@ -1,0 +1,20 @@
+#ifndef CONFIG_H_
+#define CONFIG_H_
+
+#include <iostream>
+#include <string>
+
+#define GAME_VERSION_MAJOR @Game_VERSION_MAJOR@
+#define GAME_VERSION_MINOR @Game_VERSION_MINOR@
+#define ROOT "@CMAKE_SOURCE_DIR@"
+
+namespace Config {
+  static std::ostream * const LOGF = &std::cerr;
+  static std::string const ASSETS_DIR = ROOT"/assets/";
+  static std::string const TESTF_DIR = ROOT"/src/tests/test_files/";
+  static std::string const WIN_CAPT = "Game";
+  static constexpr int WIN_W = 800;
+  static constexpr int WIN_H = 600;
+}
+
+#endif
