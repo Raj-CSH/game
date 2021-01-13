@@ -22,5 +22,7 @@ namespace Image {
 		static SDL_Surface ** bg_surf = new SDL_Surface *;
 		return bg_surf;
 	}
+
+	std::unique_ptr<>
 }
 
